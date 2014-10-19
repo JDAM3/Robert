@@ -33,6 +33,8 @@ CChildFrame::CChildFrame()
 	
 }
 
+//some comment 123
+
 CChildFrame::~CChildFrame()
 {
 }
