@@ -76,8 +76,6 @@ BOOL CComSettings::OnInitDialog()
 	m_StComBps = pApp->m_stDlgSerCon.strBps;
 	m_StComBits = pApp->m_stDlgSerCon.strBits;
 	m_StComParity = pApp->m_stDlgSerCon.strParity;
-	m_StComStopBits = pApp->m_stDlgSerCon.strStopBits;
-	m_StComControl = pApp->m_stDlgSerCon.strControl;
 
 	SetWindowText(pApp->m_stDlgSerCon.strTitle);
 	m_CtrlOk.SetWindowText(pApp->m_stDlgSerCon.strOk);
