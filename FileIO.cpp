@@ -127,6 +127,8 @@ void GetFleetNames(CString &strFile, CComboBox &m_ComboBox )
 	if (m_ComboBox.GetCount() > 0)
 		m_ComboBox.ResetContent();
 	
+	// mein kommentar
+	// laksdjfaldjsö
 	if (file.Open(strFile, CFile::modeRead | CFile::typeBinary))
 	{
 
