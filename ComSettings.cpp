@@ -14,7 +14,7 @@ static char THIS_FILE[] = __FILE__;
 /////////////////////////////////////////////////////////////////////////////
 // CComSettings dialog
 
-
+//some comment 2
 CComSettings::CComSettings(CWnd* pParent /*=NULL*/)
 	: CDialog(CComSettings::IDD, pParent)
 {
