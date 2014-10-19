@@ -1,0 +1,175 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resrc1.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG1 DIALOG DISCARDABLE  6, 18, 201, 154
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "ATSP Configuration"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Installed lines:",101,4,6,54,8
+    LISTBOX         IDC_DEVICES,4,16,135,28,WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Line properties",103,4,48,136,101
+    LTEXT           "Name:",113,9,64,26,8
+    EDITTEXT        IDC_NAME,62,62,70,12,ES_AUTOHSCROLL
+    LTEXT           "Port:",104,9,82,19,8
+    LISTBOX         IDC_BAUD,62,105,58,23,WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Extra",105,154,103,25,8,NOT WS_VISIBLE
+    LTEXT           "settings:",114,154,111,30,8,NOT WS_VISIBLE
+    EDITTEXT        IDC_COMMANDS,148,126,46,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    PUSHBUTTON      "Add",IDC_ADD,154,16,40,14
+    PUSHBUTTON      "Remove",IDC_REMOVE,154,35,40,14
+    PUSHBUTTON      "OK",IDOK,154,55,40,14
+    PUSHBUTTON      "Cancel",IDCANCEL,154,74,40,14
+    LTEXT           "Default Baud:",IDC_STATIC,9,106,44,8
+    LISTBOX         IDC_PORT,62,80,44,22,WS_VSCROLL | WS_TABSTOP
+    LTEXT           "CBST:",IDC_STATIC,9,132,22,8
+    EDITTEXT        IDC_CBST,62,130,70,12,ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        RIGHTMARGIN, 194
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// German (Austria) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEA)
+#ifdef _WIN32
+LANGUAGE LANG_GERMAN, SUBLANG_GERMAN_AUSTRIAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resrc1.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""resource.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,1,0
+ PRODUCTVERSION 1,0,1,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080004b0"
+        BEGIN
+            VALUE "Comments", "25.06.2003 R. Bernecker\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "atsp32\0"
+            VALUE "FileVersion", "1.00.01\0"
+            VALUE "InternalName", "atsp32\0"
+            VALUE "LegalCopyright", "Copyright © 2003 MTU Friedrichshafen\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "atsp32.dll\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "GSM-Rail atsp32\0"
+            VALUE "ProductVersion", "1.00.01\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x800, 1200
+    END
+END
+
+#endif    // !_MAC
+
+#endif    // German (Austria) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

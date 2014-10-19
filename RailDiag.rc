@@ -1,0 +1,975 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// German (Germany) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)
+#ifdef _WIN32
+LANGUAGE LANG_GERMAN, SUBLANG_GERMAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\RailDiag.ico"
+IDR_RAILDITYPE          ICON                    "res\\RailDiagDoc.ico"
+IDI_CONNECT             ICON                    "res\\connect.ico"
+IDI_DISCONNECT          ICON                    "res\\disconnect.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+IDR_TOOLBAR2            BITMAP                  "res\\toolbar1.bmp"
+IDR_TOOLBAR3            BITMAP                  "res\\toolbar3.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR  32, 32
+BEGIN
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    BUTTON      ID_FILE_EXPORT
+    BUTTON      ID_FILE_PRINT
+    SEPARATOR
+    BUTTON      ID_CONN_TYPE_SERIAL
+    BUTTON      ID_COM_DISCONNECT_SER
+    BUTTON      ID_COM_STATE
+    BUTTON      ID_CONN_TYPE_MODEM
+    BUTTON      ID_COM_DISCONNECT_MODEM
+    SEPARATOR
+    BUTTON      ID_NEW_BIN_DATA
+    BUTTON      ID_NEW_ANA_DATA
+    BUTTON      ID_NEW_ALARM_DATA
+    BUTTON      ID_NEW_DURATION_DATA
+    BUTTON      ID_NEW_HIST20_DATA
+    BUTTON      ID_NEW_HIST100_DATA
+    BUTTON      ID_NEW_HIST_DATA
+    BUTTON      ID_NEW_HIST2_DATA
+    SEPARATOR
+    BUTTON      ID_RELOAD_DATA
+END
+
+IDR_TOOLBAR2 TOOLBAR  32, 32
+BEGIN
+    BUTTON      ID_PHONE_BOOK
+    SEPARATOR
+    BUTTON      ID_COM_SETTINGS
+    BUTTON      ID_LOC_SETTINGS
+    BUTTON      ID_APP_ABOUT
+END
+
+IDR_TOOLBAR3 TOOLBAR  32, 32
+BEGIN
+    BUTTON      ID_FLEET_MGR
+    BUTTON      ID_FLEET_EDIT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "FileX"
+    BEGIN
+        MENUITEM "Ö&ffnen...\tStrg+O",          ID_FILE_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "Drucker&einrichtung...",      ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Letzte Datei",                ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "&Beenden",                    ID_APP_EXIT
+    END
+    POPUP "&Verbindung"
+    BEGIN
+        MENUITEM "Serielles Kabel",             ID_CONN_TYPE_SERIAL, CHECKED
+        MENUITEM "Festnetz-Modem",              ID_CONN_TYPE_MODEM, CHECKED
+        MENUITEM SEPARATOR
+        MENUITEM "&Trennen",                    ID_COM_DISCONNECT
+        MENUITEM "&Einstellungen",              ID_COM_SETTINGS
+        MENUITEM SEPARATOR
+        MENUITEM "Telefonbuch",                 ID_PHONE_BOOK
+    END
+    POPUP "&Daten"
+    BEGIN
+        MENUITEM "Binärmessstellen",            ID_NEW_BIN_DATA
+        MENUITEM "Analogmessstellen",           ID_NEW_ANA_DATA
+        MENUITEM "Alarmseite",                  ID_NEW_ALARM_DATA
+        MENUITEM "Betriebsstundenzähler",       ID_NEW_DURATION_DATA
+        MENUITEM "Fehlerringspeicher",          ID_NEW_HIST_DATA
+        MENUITEM "Fehlerringspeicher letzte 20", ID_NEW_HIST20_DATA
+        MENUITEM "Fehlerringspeicher letzte 100", ID_NEW_HIST100_DATA
+        MENUITEM "Fehlerstatistik",             32815
+        MENUITEM SEPARATOR
+        MENUITEM "Daten neu laden",             ID_RELOAD_DATA
+        MENUITEM SEPARATOR
+        MENUITEM "Konfigurationsdaten bearbeiten", ID_LOC_SETTINGS
+    END
+    POPUP "&Ansicht"
+    BEGIN
+        MENUITEM "&Symbolleiste",               ID_VIEW_TOOLBAR
+        MENUITEM "S&tatusleiste",               ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Fenster"
+    BEGIN
+        MENUITEM "Über&lappend",                ID_WINDOW_CASCADE
+        MENUITEM "&Nebeneinander",              ID_WINDOW_TILE_HORZ
+    END
+    POPUP "&?"
+    BEGIN
+        MENUITEM "&Hilfethemen",                ID_HELP_FINDER
+        MENUITEM SEPARATOR
+        MENUITEM "Inf&o über RailDiag...",      ID_APP_ABOUT
+    END
+END
+
+IDR_RAILDITYPE MENU 
+BEGIN
+    POPUP "FileX"
+    BEGIN
+        MENUITEM "Ö&ffnen...\tStrg+O",          ID_FILE_OPEN
+        MENUITEM "&Schließen",                  ID_FILE_CLOSE
+        MENUITEM "S&peichern\tStrg+S",          ID_FILE_SAVE
+        MENUITEM "Speichern &unter...",         ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "Exportieren\tStrg+X",         ID_FILE_EXPORT
+        MENUITEM SEPARATOR
+        MENUITEM "&Drucken...\tStrg+P",         ID_FILE_PRINT
+        MENUITEM "Sei&tenansicht",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "Drucker&einrichtung...",      ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Letzte Datei",                ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "&Beenden",                    ID_APP_EXIT
+    END
+    POPUP "&Verbindung"
+    BEGIN
+        MENUITEM "Serielles Kabel",             ID_CONN_TYPE_SERIAL, CHECKED
+        MENUITEM "Festnetz-Modem",              ID_CONN_TYPE_MODEM, CHECKED
+        MENUITEM SEPARATOR
+        MENUITEM "&Trennen",                    ID_COM_DISCONNECT
+        MENUITEM "&Einstellungen",              ID_COM_SETTINGS
+        MENUITEM SEPARATOR
+        MENUITEM "Telefonbuch",                 ID_PHONE_BOOK
+    END
+    POPUP "Daten"
+    BEGIN
+        MENUITEM "Binärmessstellen",            ID_NEW_BIN_DATA
+        MENUITEM "Analogmessstellen",           ID_NEW_ANA_DATA
+        MENUITEM "Alarmseite",                  ID_NEW_ALARM_DATA
+        MENUITEM "Betriebsstundenzähler",       ID_NEW_DURATION_DATA
+        MENUITEM "Fehlerringspeicher",          ID_NEW_HIST_DATA
+        MENUITEM "Fehlerringspeicher letzte 20", ID_NEW_HIST20_DATA
+        MENUITEM "Fehlerringspeicher letzte 100", ID_NEW_HIST100_DATA
+        MENUITEM "Fehlerstatistik",             32815
+        MENUITEM SEPARATOR
+        MENUITEM "Daten neu laden",             ID_RELOAD_DATA
+        MENUITEM SEPARATOR
+        MENUITEM "Konfigurationsdaten",         ID_LOC_SETTINGS
+    END
+    POPUP "&Ansicht"
+    BEGIN
+        MENUITEM "&Symbolleiste",               ID_VIEW_TOOLBAR
+        MENUITEM "S&tatusleiste",               ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Fenster"
+    BEGIN
+        MENUITEM "Neues &Fenster",              ID_WINDOW_NEW
+        MENUITEM "Über&lappend",                ID_WINDOW_CASCADE
+        MENUITEM "&Nebeneinander",              ID_WINDOW_TILE_HORZ
+        MENUITEM "&Symbole anordnen",           ID_WINDOW_ARRANGE
+    END
+    POPUP "&?"
+    BEGIN
+        MENUITEM "&Hilfethemen",                ID_HELP_FINDER
+        MENUITEM SEPARATOR
+        MENUITEM "Inf&o über RailDiag...",      ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    VK_F1,          ID_HELP,                VIRTKEY, NOINVERT
+    VK_F1,          ID_CONTEXT_HELP,        VIRTKEY, SHIFT, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "X",            ID_FILE_EXPORT,         VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 261, 83
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION " About RailDiag"
+FONT 8, "Arial", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,204,62,50,14,WS_GROUP
+    CONTROL         131,IDC_STATIC,"Static",SS_BITMAP,7,29,47,20
+    LTEXT           "Version",IDC_STATIC,64,28,31,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2002",IDC_COPYRIGHT,64,42,190,8
+    LTEXT           "1.0",IDC_VERSION,98,28,156,8,SS_NOPREFIX
+    LTEXT           "All rights reserved.",IDC_STATIC,64,56,92,8
+    LTEXT           "Rail Diag",IDC_DESCRIPTION,64,14,190,8,SS_NOPREFIX
+END
+
+IDR_MAINFRAME DIALOGEX 0, 0, 119, 18
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "Arial", 0, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_COMB_EX_LANG,"ComboBoxEx32",CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP,1,3,115,122
+END
+
+IDD_DLG_STATE DIALOGEX 0, 0, 523, 89
+STYLE DS_SETFONT | WS_CHILD
+FONT 10, "Arial", 0, 0, 0x0
+BEGIN
+    LTEXT           "\nEisenbahngesellschaft: ",IDC_ST_COMPANY,12,21,80,17
+    LTEXT           "\nLoktyp:",IDC_ST_LOCTYPE,12,41,80,17
+    LTEXT           "\nLok-Nr:",IDC_ST_LOCNR,12,61,80,17
+    LTEXT           "\nMotortyp:",IDC_ST_MOTORTYPE,184,21,80,17
+    LTEXT           "\nMotor Nr:",IDC_ST_MOTORNR,184,41,80,17
+    LTEXT           "\nDisplay:",IDC_ST_TERM_DATETIME,359,41,80,17
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,0,0,522,89
+    EDITTEXT        IDC_ED_COMPANY,98,26,60,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ED_LOCTYPE,98,46,60,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ED_LOCNR,98,66,60,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ED_MOTORTYPE,271,26,60,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ED_MOTORNR,271,46,60,12,ES_AUTOHSCROLL
+    LTEXT           "\nLaptop:",IDC_ST_DIAG_DATETIME,359,21,80,17
+    LTEXT           "\nBetriebsstundenzähler:",IDC_ST_DURCOUNT,184,61,80,17
+    LTEXT           "\nBetriebsart:",IDC_ST_MODE,359,61,80,17
+    EDITTEXT        IDC_ED_TERM_DATETIME,442,46,74,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ED_DIAG_DATETIME,442,26,74,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ED_DURCOUNT,271,66,60,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ED_MODE,442,66,74,12,ES_AUTOHSCROLL
+    CONTROL         131,IDC_STATIC,"Static",SS_BITMAP,476,1,41,16
+    LTEXT           "Motor und Turbinen Union",IDC_ST_MTU1,12,0,319,8,NOT WS_VISIBLE
+    CTEXT           "Friedrichshafen",IDC_ST_MTU2,331,7,65,8,NOT WS_VISIBLE
+    CONTROL         139,IDC_STATIC,"Static",SS_BITMAP,12,9,126,6
+END
+
+IDD_COM_SETTINGS DIALOGEX 0, 0, 186, 134
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Verbindungseinstellungen"
+FONT 8, "Arial", 0, 0, 0x0
+BEGIN
+    COMBOBOX        IDC_COM_PORT,119,15,48,49,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_COM_BPS,119,29,48,12,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_COM_BITS,119,43,48,12,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_COM_PARITY,119,57,48,12,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_COM_STOP_BITS,119,71,48,12,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_COM_CONTROL,119,85,48,12,ES_AUTOHSCROLL | WS_DISABLED
+    DEFPUSHBUTTON   "OK",IDOK,39,113,50,14
+    PUSHBUTTON      "Abbrechen",IDCANCEL,101,113,50,14
+    RTEXT           "Serielle Schnittstelle:",IDC_ST_COM_PORT,7,19,102,8
+    RTEXT           "Bits pro Sekunde:",IDC_ST_COM_BPS,7,33,102,8
+    RTEXT           "Datenbits:",IDC_ST_COM_BITS,7,47,102,8
+    RTEXT           "Parität:",IDC_ST_COM_PARITY,7,61,102,8
+    RTEXT           "Stoppbits:",IDC_ST_COM_STOP_BITS,7,75,102,8
+    RTEXT           "Flusssteuerung:",IDC_ST_COM_CONTROL,7,89,102,8
+END
+
+IDD_MODEM_SETTINGS DIALOGEX 0, 0, 265, 76
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Modem Einstellungen"
+FONT 8, "Arial", 0, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_ED_CONN_DESC,86,15,152,12,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_ED_CONN_NUMBER,119,32,119,12,ES_AUTOHSCROLL | WS_GROUP
+    EDITTEXT        IDC_DIAL_PREFIX_VIEW,86,32,32,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "...",IDC_CONN_PHONE_BOOK,241,32,15,12,WS_GROUP
+    DEFPUSHBUTTON   "OK",IDOK,7,55,64,14
+    PUSHBUTTON      "Abbrechen",IDCANCEL,100,55,64,14
+    PUSHBUTTON      "Einstellungen",IDC_SETTINGS,192,55,64,14
+    RTEXT           "Bezeichnung:",IDC_ST_CONN_DESC,7,17,73,8
+    RTEXT           "Telefonnummer:",IDC_ST_CONN_NUMBER,7,34,73,8
+END
+
+IDD_LOC_SETTINGS DIALOGEX 0, 0, 252, 279
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Konfigurationsdaten"
+FONT 8, "Arial", 0, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_ED_COMPANY,140,14,74,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ED_LOC_TYPE,140,30,74,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ED_LOC_NUMBER,140,46,74,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ED_MOTOR_TYPE,140,62,74,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ED_MOTOR_NUMBER,140,78,74,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ED_MTU_ORDER_NUMBER,140,94,74,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ED_DISPLAY_TEL_NUM,140,110,74,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ED_INHIBIT_TIME,140,126,42,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_ED_TEL_NUM_SMS1,140,142,74,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ED_TEL_NUM_SMS2,140,158,74,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ED_TEL_NUM_SMS3,140,174,74,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ED_PIN,140,190,74,12,ES_PASSWORD | ES_AUTOHSCROLL
+    EDITTEXT        IDC_ED_PUK,140,206,74,12,ES_PASSWORD | ES_AUTOHSCROLL
+    PUSHBUTTON      "Senden",IDC_SETTINGS_SEND,7,258,73,14
+    DEFPUSHBUTTON   "OK",IDOK,89,258,73,14
+    PUSHBUTTON      "Abbrechen",IDCANCEL,172,258,73,14
+    RTEXT           "Eisenbahngesellschaft:",IDC_ST_COMPANY,24,16,105,8
+    RTEXT           "Loktyp:",IDC_ST_LOC_TYPE,24,32,105,8
+    RTEXT           "Lok-Nr.:",IDC_ST_LOC_NUMBER,24,48,105,8
+    RTEXT           "Motortyp:",IDC_ST_MOTOR_TYPE,24,64,105,8
+    RTEXT           "Motor-Nr.:",IDC_ST_MOTOR_NUMBER,24,80,105,8
+    RTEXT           "MTU-Auftragsnummer:",IDC_ST_MTU_ORDER_NUMBER,24,96,105,8
+    RTEXT           "PIN:",IDC_ST_PIN,24,192,105,8
+    RTEXT           "PUK:",IDC_ST_PUK,24,208,105,8
+    RTEXT           "Display Telephonenumber:",IDC_ST_DISPLAY_TEL_NUM,24,112,105,8
+    RTEXT           "Inhibit time:",IDC_ST_INHIBIT_TIME,24,128,105,8
+    RTEXT           "Telephone number 1 for SMS:",IDC_ST_TEL_NUM_SMS1,24,144,105,8
+    RTEXT           "Telephone number 2 for SMS:",IDC_ST_TEL_NUM_SMS2,24,160,105,8
+    RTEXT           "Telephone number 3 for SMS:",IDC_ST_TEL_NUM_SMS3,24,176,105,8
+    LTEXT           "1 - 24 [h]",IDC_ST_INHIBIT_TIME2,186,128,52,8
+    RTEXT           "_____",IDC_ST_MESSAGE,7,224,238,8
+    PUSHBUTTON      "Laden",IDC_SETTINGS_LOAD,89,240,73,14
+    PUSHBUTTON      "Speichern",IDC_SETTINGS_SAVE,172,240,73,14
+END
+
+IDD_PROGRESS DIALOGEX 0, 0, 192, 95
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+FONT 8, "Arial", 0, 0, 0x0
+BEGIN
+    PUSHBUTTON      "Cancel",IDCANCEL,67,74,50,14
+    CONTROL         "Progress1",IDC_PROG_PROGRESS,"msctls_progress32",WS_BORDER,7,54,178,14
+    CTEXT           "Static",IDC_ST_PROGRESS,7,42,178,8
+    CONTROL         "",IDC_PROG_FLEET,"msctls_progress32",WS_BORDER,7,23,178,14
+    CTEXT           "Static",IDC_ST_PROGRESS_FLEET,7,11,178,8
+END
+
+IDD_PHONE_BOOK DIALOGEX 0, 0, 390, 198
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Telefonbuch"
+FONT 8, "Arial", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,97,174,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,207,174,50,14
+    PUSHBUTTON      "neuer Eintrag",IDC_NEW_ENTRY,312,49,71,14
+    PUSHBUTTON      "Eintrag bearbeiten",IDC_EDIT_ENTRY,312,80,71,14
+    PUSHBUTTON      "Eintrag löschen",IDC_DELETE_ENTRY,312,111,71,14
+    CONTROL         "List1",IDC_LIST_PHONE,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_SORTDESCENDING | LVS_AUTOARRANGE | WS_BORDER | WS_TABSTOP,7,7,287,154
+    PUSHBUTTON      "Export",IDC_PHB_EXPORT,312,174,71,14
+    PUSHBUTTON      "Import",IDC_PHB_IMPORT,312,155,71,14
+END
+
+IDD_PHONE_BOOK_ENTRY DIALOGEX 0, 0, 186, 103
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Telefonbuch-Eintrag"
+FONT 8, "Arial", 0, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_DESC_ED,90,16,83,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_NUMBER_ED,90,45,83,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,29,82,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,106,82,50,14
+    RTEXT           "Bezeichnung",IDC_DESC_ST,7,19,77,8
+    RTEXT           "Nummer",IDC_NUMBER_ST,7,48,77,8
+    LTEXT           "0049 7541 1234567",IDC_ST_HELP_NUMBER,89,34,77,8
+END
+
+IDD_MODEM_SETTINGS2 DIALOGEX 0, 0, 224, 148
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Modem Einstellungen2"
+FONT 8, "Arial", 0, 0, 0x0
+BEGIN
+    CONTROL         "Wahlpräfix",IDC_DIAL_PREFIX,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,20,25,73,11,WS_EX_RIGHT
+    EDITTEXT        IDC_ED_DIAL_PREFIX,98,24,109,13,ES_AUTOHSCROLL
+    COMBOBOX        IDC_CM_CONN_NAME,98,46,109,54,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_ED_CONN_PIN,98,67,109,13,ES_PASSWORD | ES_AUTOHSCROLL
+    CONTROL         "Pinnummer speichern",IDC_SAVE_PIN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,100,84,107,11
+    EDITTEXT        IDC_ED_CONN_PUK,98,104,109,13,ES_PASSWORD | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,33,126,42,15
+    PUSHBUTTON      "Cancel",IDCANCEL,129,126,42,15
+    LTEXT           "01 (49 7541 1234567)",IDC_ST_HELP_DIAL_PREFIX,100,13,107,9
+    RTEXT           "Verbindung:",IDC_ST_CONN_NAME,26,49,67,9
+    RTEXT           "PIN:",IDC_ST_CONN_PIN,23,70,70,9
+    RTEXT           "PUK:",IDC_ST_CONN_PUK,23,106,70,9
+END
+
+IDD_PROGRESS_FLEET DIALOGEX 0, 0, 192, 107
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+FONT 8, "Arial", 0, 0, 0x0
+BEGIN
+    PUSHBUTTON      "Cancel",IDCANCEL,67,86,50,14
+    CONTROL         "Progress1",IDC_PROG_PROGRESS,"msctls_progress32",WS_BORDER,7,59,178,14
+    CTEXT           "Static",IDC_ST_PROGRESS,7,45,178,8
+    CONTROL         "",IDC_PROG_FLEET,"msctls_progress32",WS_BORDER,7,22,178,14
+    CTEXT           "Static",IDC_ST_PROGR_FLEET,7,7,178,8
+END
+
+IDD_FLEET_EDIT DIALOGEX 0, 0, 471, 240
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Fleetmanagement"
+FONT 8, "Arial", 0, 0, 0x0
+BEGIN
+    COMBOBOX        IDC_FLEET_NAME,249,23,112,154,CBS_DROPDOWNLIST | CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "Flotte neu",ID_NEW,400,7,64,14
+    PUSHBUTTON      "Flotte löschen",ID_DEL,400,22,64,14
+    CONTROL         "List1",IDC_PHONELIST_FLEET,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_SORTDESCENDING | LVS_AUTOARRANGE | WS_BORDER | WS_TABSTOP,7,38,200,154
+    PUSHBUTTON      ">>",IDC_SET_LOK,217,83,23,20
+    PUSHBUTTON      "<<",IDC_RESET_LOK,217,119,23,20
+    CONTROL         "",IDC_LIST_FLEET,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | LVS_AUTOARRANGE | WS_BORDER | WS_TABSTOP,249,38,215,154
+    DEFPUSHBUTTON   "OK",IDOK,171,217,64,13
+    PUSHBUTTON      "Cancel",IDCANCEL,250,217,64,13
+    DEFPUSHBUTTON   "Import",ID_FLEET_IMPORT,400,198,64,14
+    PUSHBUTTON      "Export",ID_FLEET_EXPORT,400,215,64,14
+    LTEXT           "Telefonbuch",IDC_ST_FLEET_PHONE_BOOK,7,11,200,8
+    LTEXT           "Flotte",IDC_ST_FLEET,249,11,146,8
+END
+
+IDR_FLEET DIALOGEX 0, 0, 117, 16
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "Arial", 400, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_COMB_EX_FLEET,"ComboBoxEx32",CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP,1,1,115,122
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 254
+        VERTGUIDE, 64
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 76
+    END
+
+    IDR_MAINFRAME, DIALOG
+    BEGIN
+        RIGHTMARGIN, 118
+        BOTTOMMARGIN, 15
+    END
+
+    IDD_DLG_STATE, DIALOG
+    BEGIN
+        VERTGUIDE, 5
+        VERTGUIDE, 12
+        VERTGUIDE, 158
+        VERTGUIDE, 184
+        VERTGUIDE, 331
+        VERTGUIDE, 359
+        VERTGUIDE, 516
+        HORZGUIDE, 15
+        HORZGUIDE, 38
+        HORZGUIDE, 58
+        HORZGUIDE, 78
+    END
+
+    IDD_COM_SETTINGS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 127
+    END
+
+    IDD_MODEM_SETTINGS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 256
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 69
+    END
+
+    IDD_LOC_SETTINGS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 245
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 272
+    END
+
+    IDD_PROGRESS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 185
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_PHONE_BOOK, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 383
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 188
+    END
+
+    IDD_PHONE_BOOK_ENTRY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 96
+    END
+
+    IDD_MODEM_SETTINGS2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 217
+        VERTGUIDE, 207
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 141
+    END
+
+    IDD_PROGRESS_FLEET, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 185
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 100
+    END
+
+    IDD_FLEET_EDIT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 464
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 230
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_COM_SETTINGS DLGINIT
+BEGIN
+    IDC_COM_PORT, 0x403, 5, 0
+0x4f43, 0x314d, "\000" 
+    IDC_COM_PORT, 0x403, 5, 0
+0x4f43, 0x324d, "\000" 
+    IDC_COM_PORT, 0x403, 5, 0
+0x4f43, 0x334d, "\000" 
+    IDC_COM_PORT, 0x403, 5, 0
+0x4f43, 0x344d, "\000" 
+    IDC_COM_PORT, 0x403, 5, 0
+0x4f43, 0x354d, "\000" 
+    IDC_COM_PORT, 0x403, 5, 0
+0x4f43, 0x364d, "\000" 
+    IDC_COM_PORT, 0x403, 5, 0
+0x4f43, 0x374d, "\000" 
+    IDC_COM_PORT, 0x403, 5, 0
+0x4f43, 0x384d, "\000" 
+    IDC_COM_PORT, 0x403, 5, 0
+0x4f43, 0x394d, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "RailDiag"
+    IDR_RAILDITYPE          "\nRailDiag\nRailDiag\nDateityp RailDiag (*.rdi)\n.rdi\nRailDiag.Document\nRailDiag Document"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "RailDiag"
+    AFX_IDS_IDLEMESSAGE     " "
+    AFX_IDS_HELPMODEMESSAGE " "
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "ER"
+    ID_INDICATOR_CAPS       "UF"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "RF"
+    ID_INDICATOR_OVR        "ÜB"
+    ID_INDICATOR_REC        "MA"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             " \n"
+    ID_FILE_OPEN            "Open file\nOpen file"
+    ID_FILE_SAVE            "Save settings into file\nSave file"
+    ID_FILE_PAGE_SETUP      "Ändert die Druckoptionen.\nSeite einrichten"
+    ID_FILE_PRINT           "Print\nPrint"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "About\nAbout"
+    ID_HELP_INDEX           "Öffnet die Hilfefunktion.\nHilfethemen"
+    ID_HELP_USING           "Zeigt Anweisungen zum Umgang mit der Hilfe an.\nHilfe"
+    ID_HELP                 "Zeigt Hilfe zum aktuellen Vorgang oder Befehl an.\nHilfe"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_MRU_FILE2       "Öffnet dieses Dokument."
+    ID_FILE_MRU_FILE3       "Öffnet dieses Dokument."
+    ID_FILE_MRU_FILE4       "Öffnet dieses Dokument."
+    ID_FILE_MRU_FILE5       "Öffnet dieses Dokument."
+    ID_FILE_MRU_FILE6       "Öffnet dieses Dokument."
+    ID_FILE_MRU_FILE7       "Öffnet dieses Dokument."
+    ID_FILE_MRU_FILE8       "Öffnet dieses Dokument."
+    ID_FILE_MRU_FILE9       "Öffnet dieses Dokument."
+    ID_FILE_MRU_FILE10      "Öffnet dieses Dokument."
+    ID_FILE_MRU_FILE11      "Öffnet dieses Dokument."
+    ID_FILE_MRU_FILE12      "Öffnet dieses Dokument."
+    ID_FILE_MRU_FILE13      "Öffnet dieses Dokument."
+    ID_FILE_MRU_FILE14      "Öffnet dieses Dokument."
+    ID_FILE_MRU_FILE15      "Öffnet dieses Dokument."
+    ID_FILE_MRU_FILE16      "Öffnet dieses Dokument."
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "Wechselt zum nächsten Fensterausschnitt.\nNächster Ausschnitt"
+    ID_PREV_PANE            "Springt zum vorherigen Fensterausschnitt zurück.\nVorheriger Ausschnitt"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_TILE_VERT     "Ordnet die Fenster nebeneinander an.\nFenster nebeneinander"
+    ID_WINDOW_SPLIT         "Teilt das aktive Fenster in Ausschnitte.\nTeilen"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Löscht die Markierung.\nLöschen"
+    ID_EDIT_CLEAR_ALL       "Löscht alles.\nAlles löschen"
+    ID_EDIT_COPY            "Kopiert die Markierung und überträgt sie in die Zwischenablage.\nKopieren"
+    ID_EDIT_CUT             "Entfernt die Markierung und überträgt sie in die Zwischenablage.\nAusschneiden"
+    ID_EDIT_FIND            "Sucht den angegebenen Text.\nSuchen"
+    ID_EDIT_PASTE           "Fügt den Inhalt der Zwischenablage ein.\nEinfügen"
+    ID_EDIT_REPEAT          "Wiederholt die letzte Aktion.\nWiederholen"
+    ID_EDIT_REPLACE         "Ersetzt einen bestimmten Text durch einen anderen.\nErsetzen"
+    ID_EDIT_SELECT_ALL      "Markiert das gesamte Dokument.\nAlles markieren"
+    ID_EDIT_UNDO            "Macht die letzte Aktion rückgängig.\nRückgängig"
+    ID_EDIT_REDO            "Wiederholt die vorher rückgängig gemachte Aktion.\nWiederherstellen"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Ändert die Fenstergröße."
+    AFX_IDS_SCMOVE          "Ändert die Position des Fensters."
+    AFX_IDS_SCMINIMIZE      "Verkleinert das Fenster zu einem Symbol."
+    AFX_IDS_SCMAXIMIZE      "Vergrößert das Fenster zu voller Größe."
+    AFX_IDS_SCNEXTWINDOW    "Wechselt zum nächsten Dokumentfenster."
+    AFX_IDS_SCPREVWINDOW    "Wechselt zum vorherigen Dokumentfenster."
+    AFX_IDS_SCCLOSE         "Schließt das aktive Fenster und fordert zur Dokumentspeicherung auf."
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Stellt das Fenster in seiner normalen Größe wieder her."
+    AFX_IDS_SCTASKLIST      "Aktiviert die Task-Liste."
+    AFX_IDS_MDICHILD        "Aktiviert dieses Fenster."
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Beendet die Seitenansicht.\nSeitenansicht beenden"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_COM_CONNECT          "Call number spezified in settings\nCall"
+    ID_COM_DISCONNECT       "Disconnect\nDisconnect"
+    ID_COM_SETTINGS         "Settings\nSettings"
+    ID_CONN_TYPE_SERIAL     "Serial Connection\nSerial Connection"
+    ID_CONN_TYPE_MODEM      "Modem Connection\nModem Connection"
+    ID_CONN_STATE           "Connection State\nConnection State"
+    ID_CONN_LEVEL           "          "
+    ID_NEW_BIN_DATA         "Binary data\nBinary data"
+    ID_NEW_ANA_DATA         "Analog data\nAnalog data"
+    ID_NEW_ALARM_DATA       "Alarm data\nAlarm data"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEW_HIST_DATA        "Ringbuffer\nRingbuffer"
+    ID_LOC_SETTINGS         "Terminal configuration\nTerminal configuration"
+    ID_NEW_HIST20_DATA      "Ringbuffer last 20\nRingbuffer last 20"
+    ID_NEW_HIST100_DATA     "Ringbuffer last 100\nRingbuffer last100"
+    ID_FILE_EXPORT          "Export into file for excel import\nExport"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_RELOAD_DATA          "Reload data\nReload data"
+    ID_CONN_ERROR           " "
+    ID_PHONE_BOOK           "open phonebook\n open phonebook"
+    ID_COM_DISCONNECT_SER   "Disconnect Serial Connection\nDisconnect Serial Connection"
+    ID_COM_DISCONNECT_MODEM "Disconnect Modem Connection\nDisconnect Modem Connection"
+    ID_NEW_DURATION_DATA    "Operating hours\nOperating hours"
+    ID_COM_STATE            "Connection State\nConnection State"
+    ID_NEW_HIST2_DATA       "Fehlerstatistik\nFehlerstatistik"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FLEET_MGR            "Flottenmanagement/nFlottenmanagement"
+    ID_FLEET_EDIT           "Flotte editieren/nFlotte editieren"
+END
+
+#endif    // German (Germany) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,2,0,0
+ PRODUCTVERSION 1,2,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "000004b0"
+        BEGIN
+            VALUE "Comments", "21.10.2010 R. Bernecker"
+            VALUE "FileDescription", "Rail Diagnose"
+            VALUE "FileVersion", "1.02.00"
+            VALUE "InternalName", "RailDiag"
+            VALUE "LegalCopyright", "Copyright © 2002-2010 MTU Friedrichshafen"
+            VALUE "OriginalFilename", "RailDiag.EXE"
+            VALUE "ProductName", "Anwendung RailDiag"
+            VALUE "ProductVersion", "1.02.00"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x0, 1200
+    END
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// German (Switzerland) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DES)
+#ifdef _WIN32
+LANGUAGE LANG_GERMAN, SUBLANG_GERMAN_SWISS
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_FLEET_NEW DIALOGEX 0, 0, 129, 76
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Flottenname"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_FLEET_NAME,7,21,115,15,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,7,55,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,72,55,50,14
+END
+
+IDD_FLEET_SEL DIALOGEX 0, 0, 129, 76
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Flottenname"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,55,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,72,55,50,14
+    COMBOBOX        IDC_FLEET_NAME,7,18,115,154,CBS_DROPDOWN | CBS_AUTOHSCROLL | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_FLEET_NEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 122
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 69
+    END
+
+    IDD_FLEET_SEL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 122
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 69
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // German (Switzerland) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// German (Austria) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEA)
+#ifdef _WIN32
+LANGUAGE LANG_GERMAN, SUBLANG_GERMAN_AUSTRIAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_MTU                 BITMAP                  "res\\mtu.bmp"
+IDB_MTU_TITLE_BOLD      BITMAP                  "res\\mtu_title_bld.bmp"
+IDB_MTU_MONO            BITMAP                  "res\\mtu_mono.bmp"
+IDB_PHONE_BOOK          BITMAP                  "res\\phone_book.bmp"
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 7, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\RailDiag.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""res\\afxres.rc""          // Standard components\r\n"
+    "#include ""res\\afxprint.rc""        // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // German (Austria) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)
+#ifdef _WIN32
+LANGUAGE 7, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\RailDiag.rc2"  // non-Microsoft Visual C++ edited resources
+#include "res\afxres.rc"          // Standard components
+#include "res\afxprint.rc"        // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

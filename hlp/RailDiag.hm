@@ -1,0 +1,61 @@
+ 
+// Commands (ID_* and IDM_*) 
+HID_NEW                                 0x10425
+HID_DEL                                 0x10426
+HID_SAVE                                0x10427
+HID_FLEET_IMPORT                        0x10427
+HID_FLEET_EXPORT                        0x10428
+HID_COM_CONNECT                         0x18005
+HID_COM_DISCONNECT                      0x18007
+HID_COM_SETTINGS                        0x18008
+HID_CONN_TYPE_SERIAL                    0x18009
+HID_CONN_TYPE_MODEM                     0x1800A
+HID_CONN_STATE                          0x1800B
+HID_CONN_LEVEL                          0x1800C
+HID_NEW_BIN_DATA                        0x1800D
+HID_NEW_ANA_DATA                        0x1800E
+HID_NEW_ALARM_DATA                      0x1800F
+HID_NEW_HIST_DATA                       0x18010
+HID_LOC_SETTINGS                        0x18011
+HID_LOC_SETTINGS_SEND                   0x18012
+HID_NEW_HIST20_DATA                     0x1801A
+HID_NEW_HIST100_DATA                    0x1801B
+HID_FILE_EXPORT                         0x1801C
+HID_RELOAD_DATA                         0x18020
+HID_CONN_ERROR                          0x18021
+HID_PHONE_BOOK                          0x18023
+HID_COM_DISCONNECT_SER                  0x18027
+HID_COM_DISCONNECT_MODEM                0x18028
+HID_NEW_DURATION_DATA                   0x18029
+HID_COM_STATE                           0x1802A
+HID_NEW_HIST2_DATA                      0x1802F
+HID_FLEET_MGR                           0x18030
+HID_FLEET_EDIT                          0x18032
+HID_BUTTON32822                         0x18036
+ 
+// Prompts (IDP_*) 
+ 
+// Resources (IDR_*) 
+HIDR_RAILSPLIT                          0x20005
+HIDR_MAINFRAME                          0x20080
+HIDR_RAILDITYPE                         0x20081
+HIDR_TOOLBAR2                           0x20094
+HIDR_FLEET                              0x2009B
+HIDR_TOOLBAR3                           0x2009C
+ 
+// Dialogs (IDD_*) 
+HIDD_ABOUTBOX                           0x20064
+HIDD_DLG_STATE                          0x20082
+HIDD_COM_SETTINGS                       0x20084
+HIDD_MODEM_SETTINGS                     0x20085
+HIDD_LOC_SETTINGS                       0x20087
+HIDD_PROGRESS                           0x20088
+HIDD_PHONE_BOOK                         0x2008E
+HIDD_PHONE_BOOK_ENTRY                   0x2008F
+HIDD_MODEM_SETTINGS2                    0x20093
+HIDD_PROGRESS_FLEET                     0x20094
+HIDD_FLEET_EDIT                         0x20095
+HIDD_FLEET_NEW                          0x20098
+HIDD_FLEET_SEL                          0x20099
+ 
+// Frame Controls (IDW_*) 

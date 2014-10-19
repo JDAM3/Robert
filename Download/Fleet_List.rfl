@@ -1,0 +1,25 @@
+
+[test]
+Elas -> Eigenes Telefon = 76
+Test = 76
+Elas -> Eigenes Telefon = 76
+
+[robert2]
+Robert = Test
+
+[hallo]
+Test = 76
+
+[fried]
+
+[hugo]
+
+[fritz]
+
+[RobertTest]
+Test = 78
+Elas -> GSM_Kinz2 = 0,06644309918
+Elsa -> Bahn_MTU copy (2) = 0,00491608660275
+
+[Beispiel]
+Robert2 = Test
