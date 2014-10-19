@@ -28,6 +28,7 @@ END_MESSAGE_MAP()
 // CChildFrame construction/destruction
 
 //some comment 456
+//new comment
 
 CChildFrame::CChildFrame()
 {
