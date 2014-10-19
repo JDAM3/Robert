@@ -58,7 +58,7 @@ typedef struct
 	DWORD dwBufferSize;
 } COM_INFO;
 
-
+//some comment
 // -----------------------------------------------------------------------------
 // statics
 
