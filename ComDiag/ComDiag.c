@@ -49,7 +49,7 @@
 #define CDI_OFF_DATA		6
 
 #define CD_MSG_HEAD_LEN		12
-#define CD_MSG_TAIL_LEN		4
+#define CD_MSG_TAIL_LEN		5
 #define CD_MIN_MSG_LEN		( CD_MSG_HEAD_LEN + CD_MSG_TAIL_LEN )
 
 #define CD_MSG_HEADER		0xFEFF
